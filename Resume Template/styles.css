@@ -1,0 +1,287 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login Page Styling */
+.login-container {
+    background-color: #FFFF00;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.login-container input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.login-container button {
+    background-color: #008000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Resume Page Styling */
+
+/* Resume Container Styling */
+.resume-container {
+    margin: 80px 20px 60px 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Resume Header Styling */
+.resume-header {
+    background-color: #C0D9D9;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.resume-header .fa-user {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+
+/* Resume Info Styling */
+.resume-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.resume-info h2 {
+    margin: 0;
+}
+
+.resume-info p {
+    margin: 5px 0;
+}
+
+/* Resume Body Styling */
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: justify;
+}
+
+.left-column,
+.right-column {
+    padding: 10px;
+}
+
+#personal-info h3,
+#skills h3,
+#interests h3 {
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#personal-info p,
+#skills p,
+#interests ul {
+    font-size: 14px;
+    text-align: right;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: auto;
+}
+
+#work-experience p,
+#projects p,
+#education p,
+#internship p,
+#achievements ul {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* Left Column Styling */
+.left-column {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    background-color: #f8e2e2;
+    border-radius: 5px;
+    max-height: 600px;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Right Column Styling */
+.right-column {
+    flex: 2;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Resume Footer Input and Button Styling */
+.resume-footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C0D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.search-container {
+    position: relative;
+    width: 200px;
+}
+
+.resume-footer input {
+    padding: 5px 30px 5px 10px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#clear-search {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+}
+
+#clear-search i {
+    font-size: 15px;
+}
+
+.resume-footer button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Error styling */
+#error-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    margin-top: 100px;
+    width: 50%;
+    height: 200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#error-container i {
+    margin-right: 10px;
+    font-size: 100px;
+    color: black;
+}
+
+#error-container span {
+    margin-left: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+/* Logout button styling */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#logout-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#logout-btn:hover {
+    background-color: #FF4500;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .resume-body {
+        flex-direction: row;
+        /* Change to row for wider screens */
+    }
+
+    .resume-container {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px;
+    }
+
+    .resume-footer input {
+        padding: 5px 40px 5px 10px;
+    }
+
+    .search-container {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .resume-container {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 50px;
+    }
+
+    .resume-header .fa-user {
+        font-size: 80px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="resume-footer">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search applicants">
+            <button id="clear-search" class="hidden" onclick="clearSearch()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <button id="prev-btn" class="hidden" onclick="previousApplicant()">Previous</button>
+        <button id="next-btn" class="hidden" onclick="nextApplicant()">Next</button>
+    </div>
+
+    <div id="error-container" class="hidden">
+        <i class="fa-solid fa-face-frown"></i>
+        <span id="error-message">No results found</span>
+    </div>
+
+    <div class="resume-container">
+        <div class="resume-header">
+            <h2 id="applicant-name">Applicant Name</h2>
+            <p id="applicant-position">Position Applied For</p>
+            <i class="fa-solid fa-user" id="user"></i>
+        </div>
+        <div class="resume-body">
+            <div class="left-column">
+
+
+                <div id="personal-info"></div>
+                <div id="skills"></div>
+                <div id="interests"></div>
+            </div>
+            <div class="right-column">
+                <div id="work-experience"></div>
+                <div id="projects"></div>
+                <div id="education"></div>
+                <div id="internship"></div>
+                <div id="achievements"></div>
+            </div>
+        </div>
+    </div>
+    <div class="logout-container">
+        <button id="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+
+    <script src="resume.js"></script>
+</body>
+
+</html>
